@@ -1,5 +1,7 @@
 import { Navigation, MapPin, Layers, Route, Smartphone, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import arArrow from "@/assets/ar-arrow-navigation.png";
+import arIndoorNav from "@/assets/ar-indoor-navigation-hero.png";
 
 const features = [
   {
@@ -48,11 +50,34 @@ export const Features = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Powerful Features for
-            <span className="gradient-primary bg-clip-text text-transparent"> Effortless Navigation</span>
+            <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"> Effortless Navigation</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Experience the future of indoor wayfinding with cutting-edge AR technology
           </p>
+        </div>
+        
+        {/* Visual showcase */}
+        <div className="max-w-4xl mx-auto mb-16 grid md:grid-cols-2 gap-8 items-center animate-fade-in-up">
+          <div className="relative rounded-2xl overflow-hidden shadow-strong hover-lift">
+            <img 
+              src={arIndoorNav} 
+              alt="AR indoor navigation visualization showing directional overlays" 
+              className="w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+          </div>
+          <div className="space-y-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+              <img src={arArrow} alt="Navigation arrow" className="w-6 h-6" />
+              <span className="text-sm font-medium text-primary">AR-Powered Guidance</span>
+            </div>
+            <h3 className="text-3xl font-bold">Navigate with Confidence</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Our AR technology overlays intuitive directional arrows and markers directly onto your camera view, 
+              making indoor navigation as simple as following the path illuminated before you.
+            </p>
+          </div>
         </div>
         
         {/* Features grid */}

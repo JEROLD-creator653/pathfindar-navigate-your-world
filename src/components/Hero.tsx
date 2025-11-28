@@ -27,9 +27,8 @@ export const Hero = () => {
           
           {/* Main headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Navigate Indoor Spaces
-            <span className="block gradient-primary bg-clip-text text-transparent animate-gradient" 
-                  style={{ backgroundSize: "200% 200%" }}>
+            Navigate Indoor Spaces{" "}
+            <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Stress-Free with AR
             </span>
           </h1>
